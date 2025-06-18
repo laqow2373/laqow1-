@@ -1,0 +1,125 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: #ba0c2f;
+    color: #fff;
+}
+
+.navbar .logo img {
+    width: 60px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.burger {
+    display: none;
+    font-size: 24px;
+}
+
+/* Hero */
+.hero {
+    background: url('https://wallpapercave.com/wp/wp2626755.jpg') no-repeat center center/cover;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+}
+
+.hero .btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #ba0c2f;
+    border: none;
+    cursor: pointer;
+    margin-top: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+/* About Section */
+.about {
+    background: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+/* News */
+.news {
+    padding: 40px 20px;
+    background-color: #eee;
+}
+
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.news-card {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.news-card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Matches */
+.matches {
+    padding: 40px 20px;
+    background: white;
+    text-align: center;
+}
+
+.matches ul {
+    list-style: none;
+    padding: 0;
+}
+
+.matches li {
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #ba0c2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .social a {
+    color: white;
+    margin: 0 10px;
+    font-size: 20px;
+}

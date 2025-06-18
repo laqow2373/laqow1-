@@ -1,0 +1,250 @@
+/* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding-top: 80px; /* To avoid overlap with fixed header */
+            background-color: #f4f4f4;
+        }
+        /* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding-top: 80px; /* To avoid overlap with fixed header */
+    background-color: #f4f4f4;
+}
+
+/* Fixed Header and Navigation */
+header {
+    background-color: skyblue;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    padding: 10px;
+    white-space: nowrap;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00;
+}
+
+/* Section Styling */
+.section {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-sizing: border-box;
+}
+
+.section h2 {
+    color: #004080;
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.image-row img {
+    flex: 1 1 calc(50% - 20px);
+    max-width: 100%;
+    border-radius: 10px;
+    min-width: 200px;
+}
+
+.section p, .section ul {
+    font-size: 16px;
+    color: #333;
+}
+
+.section ul {
+    margin-left: 20px;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .logo {
+        margin-bottom: 10px;
+    }
+    
+    .logo img {
+        width: 80%;
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 5px;
+    }
+    
+    .nav-links li a {
+        padding: 5px;
+    }
+    
+    .section {
+        margin: 10px;
+        padding: 15px;
+    }
+    
+    .image-row img {
+        flex: 1 1 100%;
+    }
+    
+    body {
+        padding-top: 150px; /* More space for stacked header */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 180px; /* Even more space for smallest screens */
+    }
+    
+    .section {
+        padding: 10px;
+    }
+    
+    .section h2 {
+        font-size: 1.5em;
+    }
+    
+    .section p, .section ul {
+        font-size: 14px;
+    }
+}
+
+        /* Fixed Header and Navigation */
+        header {
+            background-color:skyblue;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 15px;
+        }
+
+        .nav-links li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            padding: 30px;
+        }
+
+        .nav-links li a:hover {
+            color: #ffcc00;
+        }
+
+        /* Section Styling */
+        .section {
+            padding: 40px;
+            background-color: white;
+            margin: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .section h2 {
+            color: #004080;
+        }
+
+        .image-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .image-row img {
+            flex: 1 1 calc(50% - 20px);
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .section p, .section ul {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .section ul {
+            margin-left: 20px;
+        }
+
+        /* Footer Styling */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #004080;
+            color: white;
+            margin-top: 40px;
+        }

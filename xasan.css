@@ -1,0 +1,111 @@
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 80px; /* To avoid overlap with fixed header */
+    background-color: #f4f4f4;
+}
+
+/* Fixed Header and Navigation */
+header {
+    background-color: #004080; /* Midab buluug ah */
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed; /* Tusmada ayaa deggan */
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; /* Farqiga u dhexeeya link-yada */
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffcc00; /* Midab hovers */
+}
+
+/* Section Styling */
+.section {
+    padding: 40px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 10px; /* Kuleylka yaa yuugsan */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Saamaynta hoostiisa */
+}
+
+.section h2 {
+    color: #004080; /* Midabka cinwaanka */
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap; /* Flexbox u sameeysi */
+    gap: 20px; /* Farqiga u dhexeeya sawirrada */
+    margin: 20px 0;
+}
+
+.image-row img {
+    flex: 1 1 calc(50% - 20px); /* Labada sawir ee jaranjarada */
+    max-width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease; /* Saamaynta */
+}
+
+.image-row img:hover {
+    transform: scale(1.05); /* Saamaynta hover ee sawirrada */
+}
+
+.section p, .section ul {
+    font-size: 16px; /* Farta qoraalkan */
+    color: #333; /* Midabka qoraalka */
+}
+
+.section ul {
+    margin-left: 20px; /* Marginta liistada */
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #004080; /* Midab footer */
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column; /* Dhiirigelin laba jeer */
+        align-items: center;
+        gap: 10px; /* Farqiga yar tirsan */
+    }
+
+    .image-row img {
+        flex: 1 1 100%; /* Sawirrada isku meeleyn */
+    }
+
+    .section {
+        margin: 10px; /* Mooska yar ee cadaadis */
+    }
+}

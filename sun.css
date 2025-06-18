@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+
+header {
+  background: #2c3e50;
+  color: white;
+  padding: 20px 0;
+}
+
+header h1 span {
+  color: #3498db;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #3498db;
+}
+
+.hero {
+  background: url('https://via.placeholder.com/1200x500') center/cover no-repeat;
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+  font-size: 3rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin: 20px 0;
+}
+
+.btn {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #2980b9;
+}
+
+section {
+  padding: 60px 0;
+}
+
+.course-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.course {
+  background: #f4f4f4;
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+footer {
+  background: #2c3e50;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+  }
+
+  .course-list {
+    flex-direction: column;
+  }
+
+  .hero h2 {
+    font-size: 2rem;
+  }
+}
